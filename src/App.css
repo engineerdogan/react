@@ -15,7 +15,7 @@ body {
     background-color: rgb(40, 43, 48); /* Arka plan rengi */
     display: flex;
     justify-content: space-around;
-    padding: 5px;
+    padding: 1px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 18px 18px;
