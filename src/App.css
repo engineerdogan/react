@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 5px;
-    border-top: 2px solid #000;
+    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 18px 18px;
     height: 60px;
