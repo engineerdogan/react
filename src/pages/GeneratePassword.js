@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CryptoJS from 'crypto-js';
 import './GeneratePassword.css';
-import { FaKey, FaClipboard, FaBuilding } from 'react-icons/fa'; // SAP için ikon ekledik
+import { FaKey, FaClipboard } from 'react-icons/fa'; // İkonlar
 
 const GeneratePassword = () => {
     const [macAddress, setMacAddress] = useState('');
@@ -84,89 +84,8 @@ const GeneratePassword = () => {
                     Şifre Üret
                 </button>
                 <button className="copy-button" onClick={handleCopyClick}>
-                    <FaClipboard className="copy-icon" /> {/* Yeni simge kullanıldı */}
+                    <FaClipboard className="copy-icon" />
                 </button>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" /> {/* SAP için ikon */}
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.6</div>
-                        <div>a2l.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">A2L</div>
-                </div>
-            </div>
-            {/* Diğer header'ları buraya ekleyin */}
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.9</div>
-                        <div>a2t.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">A2T</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.20</div>
-                        <div>a3l.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">A3L</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.8</div>
-                        <div>a3t.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">A3T</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.5</div>
-                        <div>b0l.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">B0L</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.4</div>
-                        <div>b0t.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">B0T</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.10</div>
-                        <div>b1l.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">B1L</div>
-                </div>
-            </div>
-            <div className="info-header">
-                <FaBuilding className="info-icon" />
-                <div className="info-content">
-                    <div className="info-left">
-                        <div>192.168.90.11</div>
-                        <div>b1t.servers.ngkutahya.com</div>
-                    </div>
-                    <div className="info-right">B1T</div>
-                </div>
             </div>
         </div>
     );
