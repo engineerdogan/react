@@ -1,0 +1,17 @@
+/* Page1.css */
+
+.container {
+
+    max-width: 800px;
+    margin: 10px auto;
+
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff; /* Beyaz renk */
+}
+
+p {
+    color: #ddd; /* Açık gri renk */
+}

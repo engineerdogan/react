@@ -1,0 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Siyah arka plan rengi */
+    color: #f0f0f0; /* Açık yazı rengi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar ile ilgili stil kurallarını buradan kaldırın */
