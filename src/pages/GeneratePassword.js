@@ -57,6 +57,8 @@ const GeneratePassword = () => {
 
     return (
         <div className="container">
+            <div className="main-title">Şifre Oluştur</div>
+            <div className="main-subtitle">(Şifreler MAC adresiyle oluşturulmakta)</div>
             <div className="header-box">
                 <FaKey className="header-icon" />
                 <div>
@@ -69,23 +71,22 @@ const GeneratePassword = () => {
                 value={macAddress}
                 placeholder="00-14-22-01-23-45"
                 onChange={handleInputChange}
-                style={{ borderColor: inputError ? 'red' : '#555' }}
-                maxLength={17}
+                style={{ borderColor: inputError ? 'red' : '#333' }} // Hata durumunda kenarlık rengi
             />
-            <button
-                onClick={handleGenerateClick}
-                disabled={!macAddress || !isValidMacAddress(macAddress)}
-            >
-                Şifre Üret
-            </button>
-            {password && (
-                <div id="result-container">
-                    <div id="result">
-                        {password}
-                    </div>
-                    <FaCopy className="copy-icon" onClick={handleCopyClick} title="Kopyala" />
-                </div>
-            )}
+            {inputError && <div style={{ color: 'red' }}>{inputError}</div>}
+            {password && <div id="result">{password}</div>}
+            <div className="button-container">
+                <button
+                    className="generate-button"
+                    onClick={handleGenerateClick}
+                    disabled={!macAddress || !isValidMacAddress(macAddress)}
+                >
+                    Şifre Üret
+                </button>
+                <button className="copy-button" onClick={handleCopyClick}>
+                    <FaCopy className="copy-icon" />
+                </button>
+            </div>
         </div>
     );
 };
