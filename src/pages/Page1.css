@@ -1,17 +1,70 @@
-/* Page1.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
-.container {
-
+.page1-container {
+    width: 100vw;
     max-width: 800px;
-    margin: 10px auto;
-
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-h1 {
-    font-size: 60px;
-    color: #fff; /* Beyaz renk */
+.info-header {
+    width: 100%; /* Tam genişlik */
+    background-color: #282c30; /* Arka plan rengi */
+    border-radius: 12px; /* Köşe yuvarlatmaları */
+    padding: 10px 20px; /* Padding ayarları */
+    display: flex;
+    align-items: center;
+    gap: 20px; /* İkon ve yazı arasındaki boşluk */
+    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+    margin-top: 20px; /* Üstten boşluk */
+    margin-left: auto; /* Header'ı sola yaslıyoruz */
+    margin-right: auto; /* Header'ı sağa yaslıyoruz */
+    max-width: 800px; /* Sağ ve sol kenarlarda boşluk bırakmak için genişliği sınırlandırdık */
 }
 
-p {
-    color: #ddd; /* Açık gri renk */
+.info-icon {
+    font-size: 40px; /* İkon boyutu */
+    color: #ffdd57; /* İkon rengi */
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between; /* Sol ve sağ tarafı hizala */
+    width: 100%; /* Tam genişlik */
+    align-items: center; /* Dikey hizalama */
+}
+
+.info-left {
+    text-align: left; /* Sola hizalama */
+    display: flex;
+    flex-direction: column; /* Alt alta yerleştirme */
+    gap: 10px; /* Aralarındaki boşluk */
+}
+
+.info-left div:first-child {
+    font-weight: bold; /* İlk metni kalın yapma */
+}
+
+.info-right {
+    text-align: right; /* Sağa hizalama */
+    font-weight: bold; /* Kalın metin */
 }
