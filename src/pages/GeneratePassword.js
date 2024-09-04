@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CryptoJS from 'crypto-js';
 import './GeneratePassword.css';
+import { FaKey } from 'react-icons/fa';
 import { FaCopy } from 'react-icons/fa';
 
 const GeneratePassword = () => {
@@ -56,36 +57,36 @@ const GeneratePassword = () => {
     };
 
     return (
-        <div className="generate-password-container">
-            <div className="generate-password-alert-box">
-                MAC adresine göre şifre üretilmektedir.
+        <div className="container">
+            <div className="header-box">
+                <FaKey className="header-icon" />
+                <div>
+                    <div className="header-title">Password Generator</div>
+                    <div className="sub-title">MAC adresine göre şifre üretilmektedir.</div>
+                </div>
             </div>
-            <div className="generate-password-box">
-                <h1>Şifre Üret</h1>
-                <p>Şifreler MAC adresi kullanılarak oluşturulmaktadır.</p>
-                <input
-                    type="text"
-                    value={macAddress}
-                    placeholder="00-14-22-01-23-45"
-                    onChange={handleInputChange}
-                    style={{ borderColor: inputError ? 'red' : '#555' }}
-                    maxLength={17}
-                />
-                <button
-                    onClick={handleGenerateClick}
-                    disabled={!macAddress || !isValidMacAddress(macAddress)}
-                >
-                    Şifre Üret
-                </button>
-                {password && (
-                    <div className="generate-password-result-container">
-                        <div className="generate-password-result">
-                            {password}
-                        </div>
-                        <FaCopy className="generate-password-copy-icon" onClick={handleCopyClick} title="Kopyala" />
+            <input
+                type="text"
+                value={macAddress}
+                placeholder="00-14-22-01-23-45"
+                onChange={handleInputChange}
+                style={{ borderColor: inputError ? 'red' : '#555' }}
+                maxLength={17}
+            />
+            <button
+                onClick={handleGenerateClick}
+                disabled={!macAddress || !isValidMacAddress(macAddress)}
+            >
+                Şifre Üret
+            </button>
+            {password && (
+                <div id="result-container">
+                    <div id="result">
+                        {password}
                     </div>
-                )}
-            </div>
+                    <FaCopy className="copy-icon" onClick={handleCopyClick} title="Kopyala" />
+                </div>
+            )}
         </div>
     );
 };
