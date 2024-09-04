@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import CryptoJS from 'crypto-js';
 import './GeneratePassword.css';
-import { FaKey } from 'react-icons/fa';
-import { FaCopy } from 'react-icons/fa';
+import { FaKey, FaCopy } from 'react-icons/fa';
 
 const GeneratePassword = () => {
     const [macAddress, setMacAddress] = useState('');
