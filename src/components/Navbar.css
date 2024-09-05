@@ -35,6 +35,14 @@
     margin-bottom: 3px;
 }
 
+.nav-link i.icon-lock {
+    color: rgb(158, 161, 166); /* Kilit simgesinin varsayılan rengi gri */
+}
+
+.nav-link i.icon-lock-open {
+    color: rgb(32, 107, 234); /* Açık simgesinin rengi mavi */
+}
+
 .nav-link.active {
     background-color: rgb(28, 31, 36); /* Tıklandığında arka plan rengi */
     color: #fff; /* Tıklandığında yazı rengi beyaz */
@@ -42,5 +50,9 @@
 }
 
 .nav-link.active i {
-    color: #fff;
+    color: #fff; /* Aktif durumda ikon rengini beyaz yapar */
+}
+
+.nav-link:not(.active) i.icon-lock-open {
+    color: rgb(158, 161, 166); /* Ana sayfa aktif değilse gri */
 }
