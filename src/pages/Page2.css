@@ -1,5 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .page2-container {
-    background-color: #2e2e2e; /* Düz arka plan rengi (örnek olarak biraz farklı bir renk) */
-    width: 100vw; /* Tam genişlik */
-    height: 100vh; /* Tam yükseklik */
+    width: 100vw;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2-header-wrapper {
+    width: 100%;
+    background-color: rgb(40,43,48);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 5px; /* İçteki dikdörtgenler arasında boşluk */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Çerçeve gölgesi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2-header {
+    display: flex;
+    background-color: rgb(40,43,48);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* İsteğe bağlı: Başlıkların genişliğini sınırlandırabiliriz */
+}
+
+.page2-tab {
+    background-color: rgb(40,43,48);
+    color: #fff;
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    border: none; /* Kenar çizgisi kaldırıldı */
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.page2-tab:first-child {
+    border-right: none; /* Kenar çizgisi kaldırıldı */
+}
+
+/* Seçili sekme için stil */
+.page2-tab.active {
+    background-color: rgb(28,31,36);
+}
+
+/* Sekme seçimi için default renk */
+.page2-tab:not(.active) {
+    background-color: rgb(40,43,48);
+}
+
+.page2-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütun düzeni */
+    gap: 20px;
+    width: 100%;
+}
+
+.page2-game-option {
+    background-color: rgb(28,31,36);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.page2-game-option img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.page2-game-option p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
 }
