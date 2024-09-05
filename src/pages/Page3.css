@@ -25,14 +25,24 @@ body {
     padding-bottom: 75px;
 }
 
+/* Başlık ve alt başlık */
 .page3-title {
-    font-size: 28px;
+    font-size: 28px; /* Başlık boyutu */
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Üst başlıkla alt başlık arası boşluk */
 }
 
+.page3-subtitle {
+    font-size: 18px; /* Alt başlık boyutu */
+    font-weight: 400;
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 30px; /* Alt başlık ile içerik arası boşluk */
+}
+
+/* To-Do input ve butonları */
 .page3-todo-input {
     width: 100%;
     max-width: 400px;
@@ -53,11 +63,13 @@ body {
     cursor: pointer;
 }
 
+/* To-Do listesi */
 .page3-todo-list {
     list-style: none;
     padding: 0;
-    width: 100%;
-    max-width: 400px;
+    width: 100%; /* Sayfanın genişliğine uyacak şekilde */
+    max-width: 800px; /* Maksimum genişliği sayfa ile uyumlu hale getirdik */
+    margin: 20px auto; /* Ortalamak için otomatik margin ve üst-alt boşluk */
 }
 
 .page3-todo-item {
