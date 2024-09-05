@@ -14,7 +14,7 @@ body {
 }
 
 .page2-container {
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
     padding: 20px;
@@ -26,23 +26,35 @@ body {
 
 .page2-header-wrapper {
     width: 100%;
+    max-width: 1200px; /* Genişliği grid container ile eşitle */
     background-color: rgb(40,43,48);
-    border-radius: 12px;
+    border-radius: 8px;
     margin-bottom: 20px;
-    padding: 5px; /* İçteki dikdörtgenler arasında boşluk */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Çerçeve gölgesi */
+    padding: 5px 0; /* Dış boşlukları ayarladık */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 35px;
+    position: sticky; /* Header'ı sabit hale getiriyoruz */
+    top: 20px; /* Sayfa kaydırıldığında header'ı en üstte sabit tut */
+    z-index: 1000; /* Header'ın diğer öğelerin üstünde kalması için z-index ayarlaması */
+    background-color: rgb(40,43,48); /* Arka plan rengini tekrar ekledik */
 }
+
 
 .page2-header {
     display: flex;
     background-color: rgb(40,43,48);
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    max-width: 600px; /* İsteğe bağlı: Başlıkların genişliğini sınırlandırabiliriz */
+    max-width: 100%; /* Header genişliğini dış header ile uyumlu hale getirdik */
+    height: 40px;
+    padding: 0 5px; /* İç boşlukları ayarladık */
+    box-sizing: border-box; /* Padding ve border'ların genişliğe dahil olmasını sağlar */
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
 }
 
 .page2-tab {
@@ -50,34 +62,37 @@ body {
     color: #fff;
     flex: 1;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
-    border: none; /* Kenar çizgisi kaldırıldı */
-    font-size: 18px;
+    border: none;
+    font-size: 14px;
     font-weight: 600;
-    border-radius: 12px;
+    border-radius: 6px;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
 }
 
 .page2-tab:first-child {
-    border-right: none; /* Kenar çizgisi kaldırıldı */
+    border-right: none;
 }
 
-/* Seçili sekme için stil */
 .page2-tab.active {
     background-color: rgb(28,31,36);
 }
 
-/* Sekme seçimi için default renk */
 .page2-tab:not(.active) {
     background-color: rgb(40,43,48);
 }
 
 .page2-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 sütun düzeni */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
     width: 100%;
+    max-width: 1200px; /* Aynı genişliği header wrapper ile eşitle */
+    box-sizing: border-box;
 }
 
 .page2-game-option {
@@ -89,17 +104,54 @@ body {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .page2-game-option img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
 .page2-game-option p {
-    font-size: 16px;
+    font-size: 12px; /* Yazı boyutunu küçülttük */
     color: #fff;
     font-weight: 500;
     margin: 0;
+    text-align: center; /* Yazıyı ortaladık */
+    line-height: 1.4; /* Satır yüksekliğini ayarladık */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page2-header {
+        height: 35px;
+    }
+    
+    .page2-tab {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .page2-game-option img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page2-header {
+        height: 30px;
+    }
+    
+    .page2-tab {
+        font-size: 10px;
+        padding: 6px;
+    }
+    
+    .page2-game-option img {
+        height: 100px;
+    }
 }
