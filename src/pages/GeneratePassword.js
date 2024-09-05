@@ -56,14 +56,14 @@ const GeneratePassword = () => {
     };
 
     return (
-        <div className="container">
-            <div className="main-title">Şifre Oluştur</div>
-            <div className="main-subtitle">(Şifreler MAC adresiyle oluşturulmakta)</div>
-            <div className="header-box">
-                <FaKey className="header-icon" />
+        <div className="generate-password-container">
+            <div className="generate-password-title">Şifre Oluştur</div>
+            <div className="generate-password-subtitle">(Şifreler MAC adresiyle oluşturulmakta)</div>
+            <div className="generate-password-header-box">
+                <FaKey className="generate-password-header-icon" />
                 <div>
-                    <div className="header-title">Password Generator</div>
-                    <div className="sub-title">MAC adresine göre şifre üretilmektedir.</div>
+                    <div className="generate-password-header-title">Password Generator</div>
+                    <div className="generate-password-sub-title">MAC adresine göre şifre üretilmektedir.</div>
                 </div>
             </div>
             <input
@@ -77,7 +77,7 @@ const GeneratePassword = () => {
             {password && <div id="result">{password}</div>}
             <div className="button-container">
                 <button
-                    className="generate-button"
+                    className="generate-password-button"
                     onClick={handleGenerateClick}
                     disabled={!macAddress || !isValidMacAddress(macAddress)}
                 >
