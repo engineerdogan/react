@@ -104,13 +104,13 @@ body {
 }
 
 .page2-game-option img {
-    width: auto; /* Genişliği otomatik ayarla */
-    height: 100%; /* Yüksekliği tam olarak ayarla */
-    max-width: 150px; /* En fazla genişlik */
-    max-height: 150px; /* En fazla yükseklik */
-    object-fit: contain; /* Orantıyı koruyarak sığdırma */
-    border-radius: 16px;
+    width: 100%; /* Ebeveyn elemanının genişliğine uyum sağla */
+    height: auto; /* Yüksekliği otomatik olarak ayarla */
+    max-width: 300px; /* Maksimum genişlik */
+    border-radius: 12px; /* Oval köşeler */
+    object-fit: cover; /* Resmin orantısını koruyarak sığdırma */
 }
+
 
 
 .page2-game-option p {
