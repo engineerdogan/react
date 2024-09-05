@@ -39,7 +39,7 @@ const Page3 = () => {
             <ul className="page3-todo-list">
                 {todos.map((todo, index) => (
                     <li key={index} className={`page3-todo-item ${todo.completed ? 'page3-todo-complete' : ''}`}>
-                        <span onClick={() => toggleComplete(index)}>{todo.text}</span>
+                        <span>{index + 1}. {todo.text}</span> {/* Sıra numarasını ekliyoruz */}
                         <span className="page3-todo-remove" onClick={() => removeTodo(index)}>X</span>
                     </li>
                 ))}
