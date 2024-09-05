@@ -3,16 +3,26 @@ import './Page2.css';
 
 const gameOptions = {
     Games: [
-        { id: 12, imageUrl: 'https://cdn.hamsterkombat.io/fluff/image.webp', name: 'Fluff Crusade' },
+        
+		{ id: 16, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
+        { id: 15, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
+        { id: 14, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
+        { id: 13, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
+		{ id: 12, imageUrl: 'https://cdn.hamsterkombat.io/fluff/image.webp', name: 'Fluff Crusade' },
         { id: 11, imageUrl: 'https://cdn.hamsterkombat.io/zoopolis/image.webp', name: 'Zoopolis' },
         { id: 10, imageUrl: 'https://cdn.hamsterkombat.io/tile_trio/image.webp', name: 'Tile Trio' },
         { id: 9, imageUrl: 'https://cdn.hamsterkombat.io/mud_racing/image.webp', name: 'Mud Racing' },
-    ],
-    Minigames: [
-        { id: 8, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
+		{ id: 8, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
         { id: 7, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
         { id: 6, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
         { id: 5, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
+		{ id: 4, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
+        { id: 3, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
+        { id: 2, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
+        { id: 1, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
+    ],
+    Minigames: [
+        
         { id: 2, imageUrl: 'https://cdn.hamsterkombat.io/chain_cube/image.webp', name: 'Chain Cube 2048' },
     ],
 };
