@@ -17,54 +17,73 @@ body {
     width: 100vw;
     max-width: 800px;
     box-sizing: border-box;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     padding: 20px;
     margin-top: 20px;
+    padding-bottom: 75px; /* Alt kısımda yer bırakıyoruz */
 }
 
-.info-header {
-    width: 100%; /* Tam genişlik */
-    background-color: #282c30; /* Arka plan rengi */
-    border-radius: 12px; /* Köşe yuvarlatmaları */
-    padding: 10px 20px; /* Padding ayarları */
+/* Başlık ve alt başlık */
+.page1-title {
+    font-size: 28px; /* Biraz daha büyük başlık */
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px; /* Üst başlıkla alt başlık arası daha yakın */
+}
+
+.page1-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #b0b0b0;
+    text-align: center;
+    margin-bottom: 30px; /* Alt başlık ile içerik arası daha fazla boşluk */
+}
+
+/* Sunucu kartları */
+.page1-info-header {
+    width: 100%;
+    background-color: #282c30;
+    border-radius: 12px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    gap: 20px; /* İkon ve yazı arasındaki boşluk */
-    box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
-    margin-top: 20px; /* Üstten boşluk */
-    margin-left: auto; /* Header'ı sola yaslıyoruz */
-    margin-right: auto; /* Header'ı sağa yaslıyoruz */
-    max-width: 800px; /* Sağ ve sol kenarlarda boşluk bırakmak için genişliği sınırlandırdık */
+    gap: 15px; /* İkon ve içerik arasındaki boşluğu daralttık */
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
 }
 
-.info-icon {
-    font-size: 40px; /* İkon boyutu */
-    color: #ffdd57; /* İkon rengi */
+/* İkon ve içerik stili */
+.page1-info-icon {
+    font-size: 36px; /* Biraz daha küçük ikon */
+    color: #ffdd57;
 }
 
-.info-content {
+.page1-info-content {
     display: flex;
-    justify-content: space-between; /* Sol ve sağ tarafı hizala */
-    width: 100%; /* Tam genişlik */
-    align-items: center; /* Dikey hizalama */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
-.info-left {
-    text-align: left; /* Sola hizalama */
+.page1-info-left {
+    text-align: left;
     display: flex;
-    flex-direction: column; /* Alt alta yerleştirme */
-    gap: 10px; /* Aralarındaki boşluk */
+    flex-direction: column;
+    gap: 5px;
 }
 
-.info-left div:first-child {
-    font-weight: bold; /* İlk metni kalın yapma */
+.page1-info-left div:first-child {
+    font-weight: bold;
 }
 
-.info-right {
-    text-align: right; /* Sağa hizalama */
-    font-weight: bold; /* Kalın metin */
+.page1-info-right {
+    text-align: right;
+    font-weight: bold;
+    color: #ffdd57; /* Sağdaki metni sarıya boyuyoruz */
 }
