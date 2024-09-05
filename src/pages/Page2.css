@@ -101,54 +101,34 @@ body {
     cursor: pointer;
     box-sizing: border-box;
     max-width: 100%;
+    overflow: hidden; /* Taşmayı önler */
 }
 
 .page2-game-option img {
-    width: 100%; /* Ebeveyn elemanının genişliğine uyum sağla */
-    height: auto; /* Yüksekliği otomatik olarak ayarla */
-    max-width: 300px; /* Maksimum genişlik */
-    border-radius: 12px; /* Oval köşeler */
-    object-fit: cover; /* Resmin orantısını koruyarak sığdırma */
-}
-
-
-
-.page2-game-option p {
-    font-size: 12px;
-    color: #fff;
-    font-weight: 500;
-    margin: 0;
-    text-align: center;
-    line-height: 1.4;
+    width: 100%; /* Ebeveynin genişliği kadar */
+    height: auto; /* Yükseklik otomatik */
+    max-height: 200px; /* Maksimum yükseklik */
+    object-fit: cover; /* İçerikte kesme yapmadan sığdırır */
+    border-radius: 12px; /* Köşe yuvarlamalarını uygular */
 }
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .page2-grid-container {
-        gap: 10px;
-    }
-
     .page2-game-option img {
-        height: 140px;
+        max-height: 180px;
     }
 }
 
 @media (max-width: 768px) {
-    .page2-grid-container {
-        gap: 8px;
-    }
-
     .page2-game-option img {
-        height: 120px;
+        max-height: 150px;
     }
 }
 
 @media (max-width: 480px) {
-    .page2-grid-container {
-        gap: 5px;
-    }
-
     .page2-game-option img {
-        height: 100px;
+        max-height: 120px;
     }
 }
+
+
