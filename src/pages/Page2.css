@@ -89,7 +89,7 @@ body {
 .page2-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 5px;
     width: 100%;
     max-width: 1200px; /* Aynı genişliği header wrapper ile eşitle */
     box-sizing: border-box;
