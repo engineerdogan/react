@@ -9,11 +9,16 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: auto; /* Kaydırma işlevini aktif tutar */
 }
 
-.page1-container {
+/* Scroll bar'ları görünmez yapar ancak kaydırma işlevini korur */
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Geri planı şeffaf yapar */
+}
+
+.page1-container, .page3-container {
     width: 100vw;
     max-width: 800px;
     box-sizing: border-box;
@@ -26,20 +31,20 @@ body {
 }
 
 /* Başlık ve alt başlık */
-.page1-title {
-    font-size: 28px; /* Biraz daha büyük başlık */
+.page1-title, .page3-title {
+    font-size: 28px; /* Başlık boyutu */
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 10px; /* Üst başlıkla alt başlık arası daha yakın */
+    margin-bottom: 10px; /* Üst başlıkla alt başlık arası boşluk */
 }
 
-.page1-subtitle {
-    font-size: 18px;
+.page1-subtitle, .page3-subtitle {
+    font-size: 18px; /* Alt başlık boyutu */
     font-weight: 400;
     color: #b0b0b0;
     text-align: center;
-    margin-bottom: 30px; /* Alt başlık ile içerik arası daha fazla boşluk */
+    margin-bottom: 30px; /* Alt başlık ile içerik arası boşluk */
 }
 
 /* Sunucu kartları */
@@ -86,4 +91,54 @@ body {
     text-align: right;
     font-weight: bold;
     color: #ffdd57; /* Sağdaki metni sarıya boyuyoruz */
+}
+
+/* To-Do input ve butonları */
+.page3-todo-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.page3-todo-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffdd57;
+    color: #000;
+    cursor: pointer;
+}
+
+/* To-Do listesi */
+.page3-todo-list {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Sayfanın genişliğine uyacak şekilde */
+    max-width: 800px; /* Maksimum genişliği sayfa ile uyumlu hale getirdik */
+    margin: 20px auto; /* Ortalamak için otomatik margin ve üst-alt boşluk */
+}
+
+.page3-todo-item {
+    background-color: #282c30;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.page3-todo-complete {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.page3-todo-remove {
+    cursor: pointer;
+    color: #ff5f5f;
 }
