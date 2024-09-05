@@ -109,7 +109,7 @@ body {
     height: auto; /* Yükseklik otomatik */
     max-height: 200px; /* Maksimum yükseklik */
     object-fit: cover; /* İçerikte kesme yapmadan sığdırır */
-    border-radius: 12px; /* Köşe yuvarlamalarını uygular */
+    border-radius: 6px; /* Köşe yuvarlamalarını uygular */
 }
 
 /* Responsive adjustments */
