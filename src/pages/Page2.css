@@ -93,11 +93,11 @@ body {
 .page2-game-option {
     background-color: rgb(28,31,36);
     border-radius: 12px;
-    padding: 10px;
+    padding: 5px; /* Padding değerini azaltarak kenar boşluklarını azaltırız */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px; /* Yazı ile resim arasındaki boşluğu azaltır */
     cursor: pointer;
     box-sizing: border-box;
     max-width: 100%;
@@ -110,7 +110,19 @@ body {
     max-height: 200px; /* Maksimum yükseklik */
     object-fit: cover; /* İçerikte kesme yapmadan sığdırır */
     border-radius: 6px; /* Köşe yuvarlamalarını uygular */
+    margin: 0; /* Kenar boşluklarını sıfırlar */
 }
+
+.page2-game-option p {
+    font-size: 11px; /* Yazı puntolarını küçültür */
+    font-weight: 700; /* Daha kalın font */
+    color: #fff;
+    margin: 0; /* Üst ve alt kenar boşluklarını sıfırlar */
+    margin-bottom: 35px; /* Yazının altındaki boşluk */
+    text-align: center;
+    line-height: 1.2; /* Satır yüksekliğini azaltır */
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
@@ -130,5 +142,3 @@ body {
         max-height: 120px;
     }
 }
-
-
