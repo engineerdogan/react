@@ -15,34 +15,30 @@ body {
 
 .page2-container {
     width: 100%;
-    max-width: 1200px;
     box-sizing: border-box;
     padding: 20px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-	padding-bottom: 75px;
+    padding-bottom: 75px;
 }
 
 .page2-header-wrapper {
     width: 100%;
-    max-width: 1200px; /* Genişliği grid container ile eşitle */
     background-color: rgb(40,43,48);
     border-radius: 8px;
     margin-bottom: 20px;
-    padding: 5px 0; /* Dış boşlukları ayarladık */
+    padding: 5px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35px;
-    position: sticky; /* Header'ı sabit hale getiriyoruz */
-    top: 20px; /* Sayfa kaydırıldığında header'ı en üstte sabit tut */
-    z-index: 1000; /* Header'ın diğer öğelerin üstünde kalması için z-index ayarlaması */
-    background-color: rgb(40,43,48); /* Arka plan rengini tekrar ekledik */
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    background-color: rgb(40,43,48);
 }
-
 
 .page2-header {
     display: flex;
@@ -50,12 +46,11 @@ body {
     border-radius: 12px;
     overflow: hidden;
     width: 100%;
-    max-width: 100%; /* Header genişliğini dış header ile uyumlu hale getirdik */
     height: 40px;
-    padding: 0 5px; /* İç boşlukları ayarladık */
-    box-sizing: border-box; /* Padding ve border'ların genişliğe dahil olmasını sağlar */
-    justify-content: center; /* Yatay ortalama */
-    align-items: center; /* Dikey ortalama */
+    padding: 0 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 .page2-tab {
@@ -71,8 +66,8 @@ body {
     border-radius: 6px;
     transition: background-color 0.3s ease;
     display: flex;
-    justify-content: center; /* Yatay ortalama */
-    align-items: center; /* Dikey ortalama */
+    justify-content: center;
+    align-items: center;
 }
 
 .page2-tab:first-child {
@@ -90,9 +85,8 @@ body {
 .page2-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 15px;
     width: 100%;
-    max-width: 1200px; /* Aynı genişliği header wrapper ile eşitle */
     box-sizing: border-box;
 }
 
@@ -117,42 +111,40 @@ body {
 }
 
 .page2-game-option p {
-    font-size: 12px; /* Yazı boyutunu küçülttük */
+    font-size: 12px;
     color: #fff;
     font-weight: 500;
     margin: 0;
-    text-align: center; /* Yazıyı ortaladık */
-    line-height: 1.4; /* Satır yüksekliğini ayarladık */
+    text-align: center;
+    line-height: 1.4;
 }
 
-
 /* Responsive adjustments */
+@media (max-width: 1200px) {
+    .page2-grid-container {
+        gap: 10px;
+    }
+
+    .page2-game-option img {
+        height: 140px;
+    }
+}
+
 @media (max-width: 768px) {
-    .page2-header {
-        height: 35px;
+    .page2-grid-container {
+        gap: 8px;
     }
-    
-    .page2-tab {
-        font-size: 12px;
-        padding: 8px;
-    }
-    
+
     .page2-game-option img {
         height: 120px;
     }
 }
 
 @media (max-width: 480px) {
-    .page2-header {
-        height: 30px;
+    .page2-grid-container {
+        gap: 5px;
     }
-    
-    .page2-tab {
-        font-size: 12px;
-        padding: 12px;
-        height: 30px;
-    }
-    
+
     .page2-game-option img {
         height: 100px;
     }
