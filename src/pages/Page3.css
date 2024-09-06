@@ -1,3 +1,9 @@
+/* Scroll bar'ları görünmez yapar ancak kaydırma işlevini korur */
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Geri planı şeffaf yapar */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000;
