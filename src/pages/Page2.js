@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Page2.css';
 
 const gameOptions = {
-    Games: [
+    Sekme1: [
         
 		{ id: 16, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '1' },
         { id: 15, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '2' },
@@ -21,30 +21,30 @@ const gameOptions = {
         { id: 2, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '15' },
         { id: 1, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '16' },
     ],
-    Minigames: [
+    Sekme2: [
         
         { id: 2, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '1' },
     ],
 };
 
 const Page2 = () => {
-    const [activeTab, setActiveTab] = useState('Games'); // Varsayılan olarak "Games" sekmesini aktif yap
+    const [activeTab, setActiveTab] = useState('Sekme1'); // Varsayılan olarak "Sekme1" sekmesini aktif yap
 
     return (
         <div className="page2-container">
             <div className="page2-header-wrapper">
                 <div className="page2-header">
                     <div 
-                        className={`page2-tab ${activeTab === 'Games' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('Games')}
+                        className={`page2-tab ${activeTab === 'Sekme1' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('Sekme1')}
                     >
-                        Games
+                        Sekme1
                     </div>
                     <div 
-                        className={`page2-tab ${activeTab === 'Minigames' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('Minigames')}
+                        className={`page2-tab ${activeTab === 'Sekme2' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('Sekme2')}
                     >
-                        Minigames
+                        Sekme2
                     </div>
                 </div>
             </div>
@@ -59,5 +59,6 @@ const Page2 = () => {
         </div>
     );
 };
+
 
 export default Page2;
