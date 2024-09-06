@@ -4,26 +4,26 @@ import './Page2.css';
 const gameOptions = {
     Games: [
         
-		{ id: 16, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
-        { id: 15, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
-        { id: 14, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
-        { id: 13, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
-		{ id: 12, imageUrl: 'https://cdn.hamsterkombat.io/fluff/image.webp', name: 'Fluff Crusade' },
-        { id: 11, imageUrl: 'https://cdn.hamsterkombat.io/zoopolis/image.webp', name: 'Zoopolis' },
-        { id: 10, imageUrl: 'https://cdn.hamsterkombat.io/tile_trio/image.webp', name: 'Tile Trio' },
-        { id: 9, imageUrl: 'https://cdn.hamsterkombat.io/mud_racing/image.webp', name: 'Mud Racing' },
-		{ id: 8, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
-        { id: 7, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
-        { id: 6, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
-        { id: 5, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
-		{ id: 4, imageUrl: 'https://cdn.hamsterkombat.io/mow_trim/image.webp', name: 'Mow and Trim' },
-        { id: 3, imageUrl: 'https://cdn.hamsterkombat.io/polysphere/image.webp', name: 'Polysphere' },
-        { id: 2, imageUrl: 'https://cdn.hamsterkombat.io/twerk/image.webp', name: 'Twerk Race 3D' },
-        { id: 1, imageUrl: 'https://cdn.hamsterkombat.io/merge_away/image.webp', name: 'Merge Away' },
+		{ id: 16, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '1' },
+        { id: 15, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '2' },
+        { id: 14, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '3' },
+        { id: 13, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '4' },
+		{ id: 12, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '5' },
+        { id: 11, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '6' },
+        { id: 10, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '7' },
+        { id: 9, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '8' },
+		{ id: 8, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '9' },
+        { id: 7, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '10' },
+        { id: 6, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '11' },
+        { id: 5, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '12' },
+		{ id: 4, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '13' },
+        { id: 3, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '14' },
+        { id: 2, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '15' },
+        { id: 1, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '16' },
     ],
     Minigames: [
         
-        { id: 2, imageUrl: 'https://cdn.hamsterkombat.io/chain_cube/image.webp', name: 'Chain Cube 2048' },
+        { id: 2, imageUrl: 'https://imageio.forbes.com/specials-images/imageserve/5f5a2d56d0844debd57de789/Project-management-concept-with-icons-about-planning-tasks-and-milestones/960x0.jpg', name: '1' },
     ],
 };
 
